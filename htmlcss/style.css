@@ -1,0 +1,77 @@
+body, div {
+    background-color: #1d2a35;
+    color: #ddd;
+}
+
+nav { /* this styling has the CSS weight of 0-0-1, which is the lightest CSS weight to apply, if no other styling rules are there this is what gets applied */
+    height: 150px;
+    width: 300px;
+    background-color: rgb(21, 32, 43);
+}
+
+.navbar { /* this is a class selected CSS code block target strength 0-1-0 */
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-basis: 150px 150px 150px;
+    justify-content: space-evenly; /* justify works on the main(defaulted: Horzantial) axis of the browser viewport */
+    align-items: start; /* align works on the cross axis of the browser viewport */
+
+    p {
+        font-size: 1.75rem;
+    }
+}
+
+#example-id { /* this is a id selctor, target strength 1-0-0 */
+
+}
+
+#grid-container-3-9 {
+    display: grid;
+    grid-template:
+    "aside main"
+    "aside main"
+    ;
+    grid-template-columns: 1fr 4fr;
+    height: 80vh;
+}
+
+#customer-info {
+    background-color: rgb(21, 32, 43);
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin: 2.50rem;
+}
+
+#transaction-dashboard {
+    padding: 3em;
+    border-radius: 60px;
+    background-color: rgb(21, 32, 43);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 2.50rem;
+    height: 80vh;
+    text-align: center;
+    width: auto;    
+}
+
+
+#transaction-form {
+    height: 10%;
+}
+
+#transaction-table{
+    height: 50%;
+    
+}
+
+/* Flex */
+/* Flex is a styling api built into CSS, it gives us responsive power over the browser viewport */
+
+/* Grid */
+/* is an other styling api built into CSS, but it allows to turn the view into a graph and place content within the graph */
